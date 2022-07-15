@@ -6,9 +6,9 @@ mkdir -p ~/.config/alacritty
 cp .tmux.conf ~/
 cp init.vim ~/.config/nvim/
 cp alacritty.yml ~/.config/alacritty
-echo "alias pip=pip3"
-echo "alias python=python3"
-echo "alias vim=nvim"
+echo "alias pip=pip3" > ~/.zshrc
+echo "alias python=python3" > ~/.zshrc
+echo "alias vim=nvim" > ~/.zshrc
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
