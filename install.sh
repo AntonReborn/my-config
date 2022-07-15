@@ -14,4 +14,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 pip install pynvim
 pip install jedi
+cd ..
+rm -r my-config
 nvim +PlugInstall
